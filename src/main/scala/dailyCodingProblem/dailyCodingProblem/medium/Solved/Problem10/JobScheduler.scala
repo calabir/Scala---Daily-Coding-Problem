@@ -1,4 +1,4 @@
-package dailyCodingProblem.dailyCodingProblem.medium.Problem10
+package dailyCodingProblem.dailyCodingProblem.medium.Solved.Problem10
 
 object JobScheduler extends App {
 
