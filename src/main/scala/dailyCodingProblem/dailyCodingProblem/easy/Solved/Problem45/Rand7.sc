@@ -7,9 +7,45 @@
  */
 
 def rand5(): Int = {
-  (Math.random * 6).toInt
+  (Math.random * 5).toInt + 1
 }
 
 def rand7(): Int = {
-  ((rand5() + rand5()) % 7) +1
+  ((5*rand5() + rand5() - 1) % 7) + 1
 }
+
+rand7()
+rand7()
+rand7()
+rand7()
+rand7()
+rand7()
+rand7()
+rand7()
+rand7()
+rand7()
+rand7()
+rand7()
+rand7()
+//Demonstration of the formula  5*foo() + foo() -5
+
+def GFG() = {
+
+  var first = 0
+  var second = 0
+  first = 1
+  while ( {
+    first <= 5
+  }) {
+    second = 1
+    while ( {
+      second <= 5
+    }) {
+      System.out.printf("%d \n", 5 * first + second - 5)
+      second += 1
+    }
+    first += 1
+  }
+}
+
+GFG()
