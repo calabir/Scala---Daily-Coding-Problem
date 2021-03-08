@@ -79,6 +79,7 @@ object CardinalPositions extends App {
 
     val (relativeDirection, elem) = if (e == ruleIn.first) (reverseDirection(ruleIn.direction), ruleIn.second) else (ruleIn.direction, ruleIn.first)
 
+    //TODO expand only the board to the direction required
     val newExpandedBoard = if (i == newBoard.length - 1 || i == 0 || j == newBoard(i).length - 1 || j == 0) {
       val newBoard = board.map(x => Array("") :++ x :++ Array(""))
       val vec1 = Vector.fill(newBoard.head.length)("").toArray
